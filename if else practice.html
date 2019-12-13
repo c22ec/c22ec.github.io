@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice</title>
+    <style type="text/css">
+    body {
+        background-color;
+
+    }
+
+    #square {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div>hey so I wanna try to make this if else statement.</div>
+    <div>So if the square goes from red to blue on click it worked </div>
+    <div id="square"></div>
+    <script type="text/javascript">
+    var color = 0;
+
+    var square = document.getElementById("square");
+    document.addEventListener("click", function() {
+        color = color + 1
+
+
+        if (color % 2 == 0) {
+            square.style.backgroundColor = "blue";
+
+        }
+        if (color % 2 == 1) {
+            square.style.backgroundColor = "red";
+        }
+
+
+    });
+    </script>
+</body>
+
+</html>

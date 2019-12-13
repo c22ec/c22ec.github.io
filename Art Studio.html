@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    body {
+        background-color;
+
+    }
+
+    #square {
+        width: border;
+        height: 50px;
+        background-color: purple;
+    }
+
+    #rectangle {
+        width: 70px;
+        height: 750px;
+        background-color: purple;
+    }
+
+    #red {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+       }
+
+    #orange {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+
+
+    #yellow {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;   
+
+
+    }
+    #green {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+     }
+    #blue {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+
+    .color {
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        display: inline-block;
+        position: relative;
+
+
+    }
+
+    <title></title><style>
+    </style>
+</head>
+
+<body>
+    <div id="square">Art Studio</div>
+
+    <table style="width:50%">
+    	<tr>
+            <th>
+                <div class="color" id="red"></div>
+            </th>
+            <th>
+                <div class="color" id="blue"></div>
+            </th>
+            <th>
+                <div class="color" id="orange"></div>
+            </th>
+            <th>
+            	<div class="color" id="green"></div>
+            </th>
+            <th>
+            	
+            	<div class="color" id="yellow"></div>
+            </th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></a>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+        	<td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+
+
+
+    </table>
+    
+
+
+    <script>
+
+
+    document.addEventListener("mousedown", function penDown (){
+
+    	document.addEventListener("mousemove", function draw() {
+        console.log("hi");
+        var ink = document.createElement("div");
+        ink.style.width = "20px";
+        ink.style.height = "20px";
+        ink.style.backgroundColor = "red";
+        ink.style.borderRadius = "50%";
+        ink.style.position = "absolute";
+        ink.style.left = event.x + "px";
+        ink.style.top = event.y + "px";
+        document.body.appendChild(ink);
+
+    })
+
+    });
+
+    </script>
+</body>
+
+</html>

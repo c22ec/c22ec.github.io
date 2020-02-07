@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+	<style >
+		body {
+
+			background-image:url("https://news.virginia.edu/sites/default/files/styles/uva_basic_article/public/article_image/muscle_tissue_header.jpg?itok=e6Uzg1QS");: 
+		}
+
+
+		.bees {
+
+			width: 100px;
+			height: 100px;
+			background-image:url(Corona.png);  
+			background-size:contain; 
+			background-repeat: no-repeat;
+			position:absolute;
+			display: inline-block;
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	function makeGoats () {
+		var goat = document.createElement(
+			"div");
+		
+		goat.style.right = Math.round((Math.random() * 1200)) + "px";
+		goat.style.top = Math.round((Math.random() * 1200)) + "px";
+		document.body.appendChild(goat);
+
+		goat.classList.add("bees");
+
+	} 
+	for(var i=0; i<1500; i++){
+		makeGoats();
+	}
+
+
+
+
+
+</script>
+	
+</body>
+</html>
